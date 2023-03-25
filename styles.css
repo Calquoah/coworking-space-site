@@ -30,10 +30,28 @@ h1 {
 }
 
 .item-img {
+    /*
+Challenge:
+1. Find the cause of the white space between 
+   the top of the button and the bottom of 
+   the image and eliminate it!
+*/
+    display: block; /* This is how you remove the white space below the image */
     width: 100%;
 }
 
 .caption {
+    /*
+Challenge:
+1. Position the text and button at opposite
+   ends of the parent element. Make sure that 
+   there is always at least 20px of space 
+   between the button and the text, even when 
+   you make the browser narrower.
+*/  
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* This ensures that the text and button are always this many pixels apart */
     margin: 0 25px;
 }
 
@@ -61,6 +79,60 @@ h1 {
 
 }
 
+button {
+   /* Challenge:
+1. Centrally align the button on the 
+   vertical axis so it looks like the 
+   screenshot on the slide.
+*/  margin: auto 0; /* This is how you complete the challenge */
+/* align-self: center; Could have also used this property to solve the challenge*/
+    border: none;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 .align-right {
     margin-left: auto;
+}
+
+.chatbox-bg {
+
+    /*
+Challenge:
+1. Position the chatbox in the bottom 
+   corner of the window, 6px from bottom
+   and 6px from the right. 
+*/
+   position: fixed;
+   bottom: 6px;
+   right: 6px; 
+   background-color: #dda15e;
+   width: 40px;
+   height: 40px; 
+   border-radius: 50%;
+   cursor: pointer;
+   box-shadow: 1px 1px 5px #999;
+   /*some CSS here*/
+   /* My Solution 
+   position: relative; */
+   /* Instructor's Solution: */
+   display: flex;
+}
+
+.chatbox-img {
+    /*
+Challenge:
+1. Center the speech bubble image inside
+   the circle.  
+*/
+    /* My Solution 
+    position: absolute;
+    top: 11px;
+    left: 10px; */
+    /* Instructor's Solution: */
+    margin: auto;
+    width: 50%;
 }
