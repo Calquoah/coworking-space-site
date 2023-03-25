@@ -2,26 +2,39 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    color: #282828;
 }
 
 header {
-    display: flex;
     color: whitesmoke;
     background: #282828;
 }
 
 ul {
     padding: 25px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+li {
+    cursor: pointer;
 }
 
 h1 {
     font-size: 40px;
     font-weight: 400;
-    margin: 25px 30px;
+    margin: 30px 25px;
+}
+
+.item-img {
+    width: 100%;
 }
 
 .caption {
-    margin: 25px 0px;
+    margin: 0 25px;
 }
 
 .logo {
@@ -31,4 +44,23 @@ h1 {
 
 .icon {
     width: 25px;
+}
+
+.item {
+    position: relative;
+}
+
+.img-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #cd6858;
+    color: whitesmoke;
+    font-weight: 700;
+    padding: 10px;
+
+}
+
+.align-right {
+    margin-left: auto;
 }
